@@ -48,7 +48,7 @@ private fun Project.mavenPublish(artifact: String, javadoc: Any, sources: Any, c
         archiveClassifier.set("sources")
         from(sources)
     }
-    val publishing = extensions.getByType<PublishingExtension>()
+    /*val publishing = extensions.getByType<PublishingExtension>()
     publishing.repositories.maven {
         url = `java.net`.URI(if (isSnapshot()) REPOSITORIES_OSSRH_SNAPSHOTS else REPOSITORIES_OSSRH_RELEASES)
         credentials {
@@ -59,8 +59,8 @@ private fun Project.mavenPublish(artifact: String, javadoc: Any, sources: Any, c
                 "Missing environment `OSSRH_PASSWORD` for this publication"
             }
         }
-    }
-    val mavenJava by publishing.publications.registering(MavenPublication::class) {
+    }*/
+    /*val mavenJava by publishing.publications.registering(MavenPublication::class) {
         groupId = RELEASE_GROUP
         artifactId = artifact
         version = RELEASE_VERSION
@@ -92,5 +92,5 @@ private fun Project.mavenPublish(artifact: String, javadoc: Any, sources: Any, c
         }
     }
     extensions.getByType<SigningExtension>().sign(mavenJava.get())
-    tasks.withType<Sign> { onlyIf { isSnapshot() } }
+    tasks.withType<Sign> { onlyIf { isSnapshot() } }*/
 }
