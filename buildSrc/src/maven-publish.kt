@@ -1,18 +1,12 @@
 import org.gradle.api.Project
 import org.gradle.api.Task
-import org.gradle.api.publish.PublishingExtension
-import org.gradle.api.publish.maven.MavenPublication
 import org.gradle.api.tasks.SourceSetContainer
 import org.gradle.api.tasks.TaskProvider
 import org.gradle.api.tasks.bundling.Jar
 import org.gradle.kotlin.dsl.get
-import org.gradle.kotlin.dsl.getByType
 import org.gradle.kotlin.dsl.getValue
 import org.gradle.kotlin.dsl.provideDelegate
 import org.gradle.kotlin.dsl.registering
-import org.gradle.kotlin.dsl.withType
-import org.gradle.plugins.signing.Sign
-import org.gradle.plugins.signing.SigningExtension
 
 const val REPOSITORIES_OSSRH_RELEASES = "https://s01.oss.sonatype.org/service/local/staging/deploy/maven2/"
 const val REPOSITORIES_OSSRH_SNAPSHOTS = "https://s01.oss.sonatype.org/content/repositories/snapshots/"

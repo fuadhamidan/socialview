@@ -36,7 +36,8 @@ class GetTest {
                     assertEquals(hashtags.size, 1)
                     assertEquals(hashtags[0], "eitantest")
                 }
-            })
+            }
+        )
     }
 
     @Test
@@ -52,7 +53,8 @@ class GetTest {
                     assertEquals(mentions.size, 1)
                     assertEquals(mentions[0], "eitantest")
                 }
-            })
+            }
+        )
     }
 
     @Test
@@ -68,6 +70,7 @@ class GetTest {
                     assertEquals(hyperlinks.size, 1)
                     assertEquals(hyperlinks[0], "https://my.website.com")
                 }
-            })
+            }
+        )
     }
 }
