@@ -27,7 +27,7 @@ class ExampleActivity : AppCompatActivity() {
         const val HASHTAG2_COUNT = 1000
         const val HASHTAG3_COUNT = 500
         const val MENTION1_USERNAME = "dirtyhobo"
-        const val MENTION2_USERNAME = "hobo"
+        const val MENTION2_USERNAME = "hobobo"
         const val MENTION3_USERNAME = "hendraanggrian"
         const val MENTION2_DISPLAYNAME = "Regular Hobo"
         const val MENTION3_DISPLAYNAME = "Hendra Anggrian"
