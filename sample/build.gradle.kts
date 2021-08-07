@@ -1,5 +1,5 @@
 plugins {
-    android("application")
+    android("library")
     kotlin("android")
     kotlin("android.extensions")
 }
